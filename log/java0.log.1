@@ -1,0 +1,18 @@
+Mar 06, 2023 12:05:02 PM l1j.server.Config load
+INFO: Loading Game Server config...
+Mar 06, 2023 12:05:02 PM l1j.server.server.model.map.L1WorldMap init
+SEVERE: Cannot read the array length because "<local4>" is null
+java.lang.NullPointerException: Cannot read the array length because "<local4>" is null
+	at l1j.server.CachedMapReader.listMapIds(CachedMapReader.java:61)
+	at l1j.server.CachedMapReader.read(CachedMapReader.java:175)
+	at l1j.server.server.model.map.L1WorldMap.init(L1WorldMap.java:61)
+	at l1j.server.server.model.map.L1WorldMap.<init>(L1WorldMap.java:53)
+	at l1j.server.server.model.map.L1WorldMap.createInstance(L1WorldMap.java:45)
+	at l1j.server.server.model.map.L1WorldMap.getInstance(L1WorldMap.java:38)
+	at l1j.server.server.model.L1World.<init>(L1World.java:122)
+	at l1j.server.server.model.L1World.getInstance(L1World.java:311)
+	at server.GameServer.initialize(GameServer.java:209)
+	at server.Server.startGameServer(Server.java:135)
+	at server.Server.<init>(Server.java:85)
+	at manager.LinAllManager.main(LinAllManager.java:123)
+
